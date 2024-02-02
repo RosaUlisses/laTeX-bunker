@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+\usepackage{pdfpages}%
+\usepackage{multicol}
+
+
+% adjust the page margins
+\usepackage[scale=0.8,top=0.5cm, bottom=0.1cm]{geometry}
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+
+\name{Ulisses}{Drumond Souza Rosa}                               % optional, remove / comment the line if not wanted
+\vspace*{3mm}
+
+\email{ulissesrosa@dcc.ufmg.br}                               % optional, remove / comment the line if not wanted
+                        % optional, remove / comment the line if not wanted
+ \social[github]{RosaUlisses}   
+
+ 
+\begin{document}
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Education}
+\cventry{}{}{Federal University Of Minas Gerais}{August 2023 -- Enrolled}{\hspace*{-2.5 mm} Computer Science Bachelor's Degree}{\hspace*{-2.5 mm}}
+{}{}
+\vspace{-1.5em}\begin{small}
+ \begin{multicols}{2}
+    \begin{itemize}
+\item Algorithms
+\item Computational Thinking
+\item Competitive Programming
+\item Linear Algebra
+
+    \end{itemize}
+\end{multicols}\end{small}
+
+\vspace{+1.0em}
+
+\cventry{}{}{COLTEC (Federal University Of Minas Gerais)}{January 2020 -- December 2022}{\hspace*{-2.5 mm}Technician in Systems Development}{\hspace*{-2.5 mm} }
+{}{}
+\vspace{-1.5em}\begin{small}
+ \begin{multicols}{2}
+    \begin{itemize}
+\item Web Development
+\item Game Development
+\item Data Structures 
+\item Object Oriented Programming
+    \end{itemize}
+\end{multicols}\end{small}
+
+\section{Work Experience}
+\cventry{}{}{Junior Developer -- Mais 60}{March 2022}{\hspace*{-2.5 mm}}{}
+\vspace{-1.5em}\begin{small}
+    \begin{itemize}
+\item Implementation of a C\# micro-service for handling telemedicine in lifecode 
+\item Integration with MySQL database 
+\item Development of React JS apps 
+    \end{itemize}
+\end{small}
+
+\vspace{+1.0em}
+
+\cventry{}{}{System Development Intern -- Mais 60}{April 2022 - December 2022}{\hspace*{-2.5 mm}}{}
+\vspace{-1.5em}\begin{small}
+    \begin{itemize}
+\item Implementation and maintenance of REST API's in C\# 
+\item Integration with MySQL database 
+\item Development of React JS apps 
+    \end{itemize}
+\end{small}
+
+\section{Selected Publications}
+\cventry{}{}{\href{https://www.natalnet.br/sibgrapi2022/Certificates/SBGames/JEDI/2222_\%20An\%20accessible\%20game\%20to\%20promote\%20environment\%20protection\%20awareness.pdf}{2222: An accessible game to promote environment protection awareness}}{  \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item \textbf{Authors:} Amanda Peixoto; Gabriel Moreira; Jean Berly; Ulisses Rosa; Virgínia Mota; 
+\item In the article we describe how we created 2222, a acessible maze game developed to contemplate visual impaired people.
+\end{itemize}}
+
+    
+\section{Personal Projects}
+\begin{itemize}
+\setlength\itemsep{0.65em}
+\item \href{https://github.com/RosaUlisses/Compilers-Rinha/tree/main/interpreter}{\textbf{A interpreter written in rust:}} A simple tree walk interpreter written for the open source event \href{https://github.com/aripiprazole/rinha-de-compiler}{Rinha de Compiladores}.  
+
+\item \href{https://github.com/RosaUlisses/CppLox}{\textbf{Cpp Lox:}} A C++ implementation of a interpreter for the lox programming language, with some extra features.  
+
+\item \href{https://github.com/RosaUlisses/Competitive-Programming}{\textbf{Competitive Programming:}} A repository with the solution of all the problems that I solved.
+
+\end{itemize}
+
+
+\section{Skills}
+
+\cventry{}{}{Programming Languages}{\vspace{-1.0em}}{}{}
+\vspace{-1.0em}\begin{small}
+ \begin{multicols}{2}
+    \begin{itemize}
+\item C/C++ 
+\item C\#  
+\item Rust 
+\item Python 
+\item JavaScript 
+\item Java 
+    \end{itemize}
+\end{multicols}\end{small}
+
+\section{Idioms}
+\begin{itemize}
+\item Portuguese (Native)
+\item English (Advanced)
+\item Mandarim (Basic)
+\end{itemize}
+
+\end{document}

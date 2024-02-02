@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{geometry}
+\usepackage[skip=5pt plus1pt, indent=20pt]{parskip}
+
+\usepackage{amsthm,amssymb,amsmath}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\newtheorem*{theorem}{Theorem}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+
+\geometry{margin=2.5cm}
+
+\title{\textbf{Trabalho Prático De Programação e Desenvolvimento de Software I}}
+\author{\textbf{Ulisses Drumond Souza rosa}}
+\date{\parbox{\linewidth}{\centering%
+    Universidade Federal de Minas Gerais (UFMG)\endgraf
+    Belo Horizonte - MG - Brasil\endgraf\bigskip
+    \href{mailto:email@ufmg.br}{ulissao@proton.me}}}
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introdução}
+
+    \par Essa é a documentação do \href{https://github.com/ullas-college-projects/Pds1-pratical-work}{trabalho prático} da disciplina PDS I. 
+    \par A tarefa desse trabalho consistia em ler um input de texto que descrevia as informações de um determinado número de sistemas solares, armazena-los em um array, ordenar o array e, por fim, imprimir o nome dos sistemas solares. Para realizar tal tarefa, nós utilizamos o "bromerosort" (A.K.A quicksort).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Implementação}
+
+    \par Para solucionar o problema descrito no trabalho prático eu criei 5 arquivos: main.c, input\_reader.c, input\_reader.h, solar\_system.c e solar\_system.h. É importante lembrar que esse trabalho prático foi implementado na linguagem de programação C. 
+
+    \subsection{Input Reader}
+        \par O módulo "input\_reader" tem como função ler os inputs que o usuário digitar e construir os objetos na memória a partir dos dados inseridos. O módulo em questão possui as seguintes funções.
+
+        \par
+        \lstinputlisting[language=C]{input_reader.h}
+
+        \par Essas funções leem os inputs e salvam os valores providos pelo usuário na memória do programa.
+
+    \subsection{Solar System}
+        \par Nesse módulo, eu fiz a definição dos tipos: moon\_t, planet\_t e solar\_system\_t, que são os registros que serão armazenados e processados pelo programa. É importante ressaltar que nesse projeto não há uso de alocação estática, toda alocação de memória que eu fiz no trabalho é dinâmica. Além disso, nesse módulo há também a implementação da função 'greater\_than` que verifica se o primeiro sistema solar é mais "valioso" que o segundo. Temos também as funções quicksort e partition, que basicamente implementam o bromero sort.
+
+        
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Instruções de Compilação e execução}
+
+    \par É importante ressaltar que essa documentação é baseada nesse \href{https://github.com/ullas-college-projects/Pds1-pratical-work}{projeto}. Como só é permitido enviar apenas um arquivo no moodle, eu juntei o conteúdo de todos os arquivos no arquivo "main2.c". Mas para ficar mais fácil de explicar eu documentei o projeto como se ele fosse dividido em vários módulos.
+
+    \lstinputlisting[language=bash]{bash.bash}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusão}
+
+    \par Esse trabalho prático foi bastante interessante pois implementamos um dos algoritmos de ordenação mais famosos, o quicksort. Além disso deu pra colocar em prática todos os conhecimentos adiquiridos na disciplina PDS I. 
+
+    \par Gostaria de deixar claro que eu não coloquei tantos comentários no código pois eu acredito que a forma com que o meu código está bem autoexplicativo (as variáveis e funções estão com nomes adequados) e modularizado (cada função faz o que está descrito no seu nome).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
+

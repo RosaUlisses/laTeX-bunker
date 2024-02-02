@@ -1,0 +1,47 @@
+\lesson{Oct 17 2022 Mon (12:28:10)}{Propositional Logic}
+
+\par The logic is the path of the philosophy that deals with valid inferences and the preservation of the truth. With logic we can reach truthy conclusions.
+The propositional logic is based in the principle of the third excluded. That is, the value of a proposition can be only be true or false.
+
+\begin{note}
+    \begin{center}
+       \par $
+            p \rightarrow q
+        $ (p is suficient and q is necessary)
+        \hspace{3.5em}
+        \begin{tabular} {| m{1cm} | m{1cm} | m{1cm} |}
+        \hline $p$ & $q$ & $p \rightarrow q$ \\
+        \hline $T$ & $T$ & $T$ \\ 
+        \hline $T$ & $F$ & $F$ \\ 
+        \hline $F$ & $T$ & $T$ \\ 
+        \hline $F$ & $F$ & $T$ \\
+        \hline 
+        \end{tabular}
+    \end{center}
+
+    \begin{itemize}
+        \item opposite: $q \rightarrow p$
+        \item inverse: $\lnot p \rightarrow \lnot q$
+        \item contra-positive: $\lnot q \rightarrow \lnot p$
+    \end{itemize}  
+\end{note}
+
+\par A consistent system is a system that has a true value on its truth table.
+
+\begin{itemize}
+    \item tautology: A expression that is always true
+    \item contradiction: A expression that is always false
+    \item contingency: A expression that is not a tautoloy and it is not a contradiction
+\end{itemize}
+
+\begin{theorem}
+    De Morgan's Law
+    \begin{itemize}
+        \item $\lnot (p \lor q) \equiv \lnot p \land \lnot q$        
+        \item $\lnot (p \land q) \equiv \lnot p \lor \lnot q$
+    \end{itemize}   
+\end{theorem}
+
+\par A expression is satisfable only if has at least one true on its truth table. It is important to say that every computational problem that can solved using a algorithm, can be reduced to the satisfation problem.
+
+\newpage
