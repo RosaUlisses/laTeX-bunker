@@ -1,0 +1,135 @@
+\lesson{Oct 17 2022 Mon (12:28:10)}{Analytic Geometry}
+
+\subsection{Vectors}
+\label{sub_sec:sub_section_1}
+
+\par A vector is a mathematical object that has lenght and direction.
+
+\begin{theorem}
+  \hspace{10em}
+  \begin{enumerate}
+    \item $ v + w = w + v$
+    \item $v + (w + u) = (v + w) + u$
+    \item $v+ (-v) = 0$
+    \item $v+ \vec{0} = 0$
+    \item $\alpha (w + u) = \alpha w + \alpha u$
+    \item $(\alpha + \beta) \cdot u = \alpha u + \beta u$
+    \item $(\alpha \cdot \beta) \cdot u = \alpha (u \cdot \beta u)$
+    \item $1 \cdot u = u$
+  \end{enumerate}
+\end{theorem}
+
+\vspace{3em}
+\par The lenght of a vector is called norm. Let $V = (v_{\scriptstyle{1}}, v_{\scriptstyle{2}})$. So $\|V\| = \sqrt{v_{\scriptstyle{1}} ^ 2 + v_{\scriptstyle{2}}^2}.$
+
+\begin{note}
+  \begin{itemize}
+    \item $distance(p, q) = \| \vec{pq} \|$
+    \item $\|\alpha v\| = | \alpha | \cdot \| v \|$
+  \end{itemize}
+\end{note}
+
+\begin{definition}
+  $\| v \| = 1 \rightarrow v$ is a unitary vector \\
+  \begin{flalign*}
+    u = \frac{1}{\| v \|} \cdot v \\ 
+    \| u \| = \| \frac{1}{ \| v \|} \cdot v \| \\
+    \| u \| = | \frac{1}{\| v \|} | \cdot \| v \| = 1
+  \end{flalign*}
+\end{definition}
+
+\begin{definition}
+  The dot product of two vectors v and w is defined by: \\ \\
+  $v \cdot w = v_{\scriptstyle{1}} \cdot w_{\scriptstyle{1}} + ... + v_{\scriptstyle{n}} \cdot w_{\scriptstyle{n}}$
+\end{definition}
+
+\begin{theorem}
+  \hspace{10em}
+  \begin{enumerate}
+    \item $u \cdot v = v \cdot u$
+    \item $u \cdot (v + w) = u \cdot v + u \cdot w$
+    \item $\alpha (u \cdot v) = (\alpha \cdot u) \cdot u = u \cdot (\alpha \cdot v)$
+    \item $v \cdot v = \|v\| ^ 2$
+    \item $\forall w: w \cdot w = 0 \leftrightarrow w = \vec{0}$
+  \end{enumerate}
+\end{theorem}
+
+\begin{theorem}
+  $\cos \theta = \frac{v \cdot w}{\|v\| \cdot \|w\|}$ 
+  \begin{enumerate}
+    \item $0^\circ \leq \theta < 90^\circ =  v \cdot w > 0$ 
+    \item $\theta = 90^\circ \leftrightarrow v \cdot w = 0$ ($v$ and $w$ are orthogonal) 
+    \item $0^\circ < \theta \leq 180^\circ \leftrightarrow v \cdot w < 0$
+  \end{enumerate}
+\end{theorem}
+
+\begin{definition}
+  Given two vectors $v$ and $w$, the orthogonal projection, $proj_{\scriptstyle{w}}v$, of $v$ over $w$ is the vector paralel to w that $v - proj_{\scriptstyle{w}}v$ orthogonal to w. 
+  \begin{theorem}
+    $proj_{\scriptstyle{w}}v = (\frac{v \cdot w}{\| w \|^2}) \cdot w$
+  \end{theorem}
+\end{definition}
+
+\vspace{10em}
+
+\subsection{Vectors in the space}
+
+\begin{definition}
+  Let $v = (v_{\scriptstyle{1}}, v_{\scriptstyle{2}}, v_{\scriptstyle{3}})$ and $w = (w_{\scriptstyle{1}}, w_{\scriptstyle{2}}, w_{\scriptstyle{3}})$ two vectors in the space. 
+  So the cross product between $v$ and $w$ is:
+
+  $v \times w = \left( 
+    \begin{vmatrix} v_{\scriptstyle{2}} & v_{\scriptstyle{3}} \\ w_{\scriptstyle{2}} & w_{\scriptstyle{3}} \end{vmatrix},
+   -\begin{vmatrix} v_{\scriptstyle{1}} & v_{\scriptstyle{3}} \\ w_{\scriptstyle{1}} & w_{\scriptstyle{3}} \end{vmatrix},
+    \begin{vmatrix} v_{\scriptstyle{1}} & v_{\scriptstyle{2}} \\ w_{\scriptstyle{1}} & w_{\scriptstyle{2}} \end{vmatrix}
+   \right) $ 
+\end{definition}
+
+\begin{theorem}
+  \hspace{10em}
+  \begin{enumerate}
+    \item $v \times w = -(w \times v)$
+    \item $v \times w = \vec{0} \leftrightarrow v \parallel w$
+    \item $(v \times w) \perp v \land (v \times w) \perp w$
+    \item $v \cdot v = \|v\| ^ 2$
+    \item $v \times (w + u) = (v \times w) + (v \times u)$
+  \end{enumerate}
+\end{theorem}
+
+\pagebreak
+\begin{note}
+  The canonical vectors $\vec{l} = (1,0,0)$, $\vec{j} = (0,1,0)$ and $\vec{k} = (0,0,1)$ are unit vectors paralel to the coordinate axes.
+  They are very important because every vector in the space is a linear cobination of the unit vectors \\
+
+  $\forall v \in \mathbb{R}_{\scriptstyle{3}}: v = \alpha \vec{l} + \beta \vec{j} + \lambda \vec{k}; \; \alpha, \beta, \lambda \in \mathbb{R}_{\scriptstyle{3}}$
+
+\end{note}
+
+\begin{theorem}
+  \hspace{10em}
+  \begin{enumerate}
+    \item $\|v \times w\| = \| v \| \cdot \| w \| \cdot \sin \theta$
+    \item The direction is of $v \times w$ is orthogonal to $v$ and $w$
+  \end{enumerate}
+
+  \par The area of a paralelogram determined by two vectors is $\|v \times w \|$
+
+  \begin{definition}
+    $(v \times w) \cdot u = 
+    \begin{vmatrix}
+      v_{\scriptstyle{1}} & v_{\scriptstyle{2}} & v_{\scriptstyle{3}} \\ 
+      w_{\scriptstyle{1}} & w_{\scriptstyle{2}} & w_{\scriptstyle{3}} \\ 
+      u_{\scriptstyle{1}} & u_{\scriptstyle{2}} & u_{\scriptstyle{3}} \\ 
+    \end{vmatrix}$
+
+    \begin{note}
+      The volume of paralelephiped determined by the vectors ${v, w, u}$ in the space is equal to $|(v \times w) \cdot u|$
+    \end{note}
+
+    \begin{corollary}
+      The vectors ${v, w, u}$ are in the same plane if and only if $(v \times w) \cdot u = 0$
+    \end {corollary}
+  \end{definition}
+\end{theorem}
+
+\newpage
