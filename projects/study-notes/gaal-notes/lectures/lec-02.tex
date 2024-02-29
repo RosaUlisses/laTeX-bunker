@@ -1,8 +1,66 @@
 
-\lesson{Oct 19 2022 Wen (12:28:10)}{Lecture Title}
+\lesson{Oct 19 2022 Wen (12:28:10)}{Analytic Geometry}
 
-\subsection{Sub Section 2}
+\subsection{Planes}
 \label{sub_sec:sub_section_2}
+
+\begin{definition}
+  In the space, the equation of a plane is determined by a normal vector and a point.
+\end{definition}
+
+\begin{theorem}
+  A equation of plane $\pi$ that has the point $p_{\scriptstyle{0}} = (x_{\scriptstyle{0}}, y_{\scriptstyle{0}}, z_{\scriptstyle{0}})$
+  and has a orthogonal vector $N = (a, b, c)$ is defined by \\
+
+  $\pi : ax + by + cz + d = 0$ \\
+
+  $d = -ax_{\scriptstyle{0}} -by_{\scriptstyle{0}} -cz_{\scriptstyle{0}}$
+\end{theorem}
+
+\begin{note}
+  \begin{itemize}
+    \item $p \in \pi \land q \in \pi \rightarrow \vec{pq} \parallel \pi$
+    \item $p \in \pi \land q \in \pi \rightarrow (p \times q) \perp \pi$
+  \end{itemize}
+\end{note}
+
+\begin{definition}
+  Let $p_{\scriptstyle{0}} = (x_{\scriptstyle{0}}, y_{\scriptstyle{0}}, z_{\scriptstyle{0}})$ in the plane $\pi$, and two not colinear vectors
+  $v = (v_{\scriptstyle{1}}, v_{\scriptstyle{2}}, v_{\scriptstyle{3}})$ and $w = (w_{\scriptstyle{1}}, w_{\scriptstyle{2}}, w_{\scriptstyle{3}})$ so: \\
+
+  $p = (x, y, z) \in \pi \leftrightarrow \vec{p_{\scriptstyle{0}}p} = \alpha v + \beta w \;$ so:  \\
+  $\vec{p_{\scriptstyle{0}}p} = (x - x_{\scriptstyle{0}}, y - y_{\scriptstyle{0}}, z - z_{\scriptstyle{0}}) = \alpha \cdot (v_{\scriptstyle{1}}, v_{\scriptstyle{2}}, v_{\scriptstyle{3}}) + \beta \cdot (w_{\scriptstyle{1}}, w_{\scriptstyle{2}}, w_{\scriptstyle{3}})$ \\
+
+  $\begin{bmatrix}
+    x \\
+    y \\
+    z \\
+  \end{bmatrix} = 
+  \begin{bmatrix}
+    x_{\scriptstyle{0}} \\
+    y_{\scriptstyle{0}} \\
+    z_{\scriptstyle{0}} \\
+  \end{bmatrix}
+  +
+  \begin{bmatrix}
+    v_{\scriptstyle{1}} \\
+    v_{\scriptstyle{2}} \\
+    v_{\scriptstyle{3}} \\
+  \end{bmatrix} \cdot \alpha
+  + 
+  \begin{bmatrix}
+    w_{\scriptstyle{1}} \\
+    w_{\scriptstyle{2}} \\
+    w_{\scriptstyle{3}} \\
+  \end{bmatrix}  \cdot \beta $
+\end{definition}
+
+\begin{theorem}
+  If $\pi_{\scriptstyle{1}}$ and $\pi_{\scriptstyle{2}}$ are two planes with normal vectors $N_{\scriptstyle{1}}, N_{\scriptstyle{2}}$,
+  so the angle between $\pi_{\scriptstyle{1}}$ and $\pi_{\scriptstyle{2}}$ is defined by: \\
+
+  $cos \theta = \frac{N_{\scriptstyle{1}} \cdot N_{\scriptstyle{2}}}{\|N_{\scriptstyle{1}}\| \cdot \|N_{\scriptstyle{2}}\|}$
+\end{theorem}
 
 \begin{theorem}
 This is a theorem.
